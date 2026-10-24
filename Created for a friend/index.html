@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouma Cypher Text Converter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="star-icon"></div>
+        <h1>Secret Message Vault</h1>
+        <p class="subtitle">Encrypt & decrypt your messages with style</p>
+        
+        <div class="input-group">
+            <label for="message">Enter your PlainText/EncryptedText</label>
+            <input type="text" placeholder="Type your plainText or encryptedText" id="message" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="key">Secret Key</label>
+            <input type="number" value="1" min="0" max="25" id="key" required>
+        </div>
+        
+        <div class="output-container">
+            <p id="output-title">Output:</p>
+            <input id="output-text" type="text" disabled required>
+        </div>
+
+        <div class="buttons">
+            <button class="encrypt-btn" onclick="encrypt()">🔒 Encrypt</button>
+            <button class="decrypt-btn" onclick="decrypt()">🔓 Decrypt</button>
+        </div>
+        
+        <footer>Using Caesar cipher encryption</footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

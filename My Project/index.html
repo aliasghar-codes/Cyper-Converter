@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Cipher -Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main-container">
+      <header>
+        <div class="logo">🔒</div>
+        <h1>Cipher Protocol</h1>
+        <p class="subtitle">Encrypt and Decrypt with Ease</p>
+      </header>
+
+      <div class="input-group">
+        <label class="input-label">MESSAGE</label>
+        <input
+          type="text"
+          id="message"
+          class="input-field"
+          placeholder="Enter your classified message..."
+        />
+      </div>
+
+      <div class="input-group">
+        <label class="input-label">CIPHER KEY</label>
+        <input
+          type="number"
+          id="key"
+          class="input-field"
+          placeholder="Enter numeric key (1-25)"
+          min="1"
+          max="25"
+        />
+        <div class="key-hint">Enter numeric key (1-25)</div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-encrypt" onclick="encrypt()">🔓 ENCRYPT</button>
+        <button class="btn btn-decrypt" onclick="decrypt()">🔓 DECRYPT</button>
+      </div>
+
+      <div class="output-section" id="output-section" style="display: none">
+        <div class="output-title" id="output-title"></div>
+        <input type="text" id="output-text" class="input-field" readonly />
+      </div>
+
+      <footer>CAESAR CIPHER PROTOCOL</footer>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
